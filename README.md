@@ -1,24 +1,25 @@
-# README
+# Nordeste Autos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## MVP Features
 
-Things you may want to cover:
+1 - Index
 
-* Ruby version
+Acessar uma página com os destaques de cada cliente,
+nesta página o usuário pode buscar e filtrar os veículos
+além de visualiza-los.
 
-* System dependencies
+2 - Página de uma concessionária
 
-* Configuration
+Mesmas funcionalidades da index, porém filtrados pelos
+veículos da concessionária.
 
-* Database creation
+3 - Página de exibição do veículo
 
-* Database initialization
+Detalhes do veículo como:
 
-* How to run the test suite
+- Marca/modelo
+- Fotos
+- Cor
+- Câmbio
+- Quilometragem
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
