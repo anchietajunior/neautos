@@ -1,7 +1,11 @@
 
 <header class="sticky top-0 z-50 flex justify-between items-center p-5 bg-gray-100 text-gray">
-  <div class="flex items-center space-x-2 font-bold text-xl text-red-500">
-     [icon_here] NE Veículos
+  <div class="flex items-center space-x-2 font-bold text-xl text-green-500">
+    <%= link_to root_path do %>
+      <%= image_tag "logo.png", class: "h-10" %>
+    <% end %>
+
+    <span>NE Veículos</span>
   </div>
   
   <%= render "layouts/navbar" %>
