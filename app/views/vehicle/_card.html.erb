@@ -1,0 +1,27 @@
+ <div class="bg-white shadow-md rounded-lg overflow-hidden">
+  <div
+    class="bg-local bg-cover bg-center h-48 flex items-end justify-between hover:opacity-80 transition-all duration-500 cursor-pointer"
+    style="background-image: url(<%= url_for(vehicle.photo) %>)"
+  >
+    <div class="text-white text-md p-2  bg-gradient-to-t from-gray-700 to-transparent w-full px-4">
+      <p><%= vehicle.year  %> - <%= number_to_currency(vehicle.price, unit: 'R$', separator: ',', delimiter: '.', precision: 0) %></p>
+    </div>
+
+  </div>
+  
+  <div class="p-4">
+    <p class="text-gray-700 mb-4"><%= vehicle.brand %></p>
+
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-semibold mb-2"><%= vehicle.version %></h2>
+      <p><i class="fa-regular fa-heart"></i></p>
+    </div>
+
+    <div class="flex justify-between items-center mb-4 text-sm text-gray-400 border-t pt-4 mt-4">
+      <p><%= vehicle.fuel.capitalize %></p>
+      <p><%= vehicle.color.capitalize %></p>
+      <p><%= vehicle.transmission.capitalize %></p>
+      <p><%= number_to_human(vehicle.mileage_in_km, units: { unit: 'km' }, separator: ',', delimiter: '.', precision: 0) %></p>
+    </div>
+  </div>
+ </div>

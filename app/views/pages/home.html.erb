@@ -1,0 +1,20 @@
+<div class="container mx-auto px-4">
+  <div class="py-4">
+    <h1 class="text-2xl font-semibold text-green-800 mb-4 py-4">
+      Veículos em destaque
+    </h1>
+
+    <%= render partial: 'vehicle/slide', locals: { vehicles: @favorite_vehicles } %>
+  </div>
+  
+
+  <div class="py-4">
+    <h1 class="text-2xl font-semibold text-green-800 mb-4 py-4">
+      Escolha o seu veículo dos sonhos
+    </h1>
+      
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <%= render partial: 'vehicle/card', collection: @favorite_vehicles, as: :vehicle %>
+    </div>
+  </div>
+</div>

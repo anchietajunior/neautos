@@ -17,6 +17,8 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
 
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
@@ -24,8 +26,11 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <%= render "layouts/header" %>
+    <%= render "layouts/hero" %>
+    <main class="container mx-auto my-8 px-4 mb-24">
       <%= yield %>
     </main>
+    <%= render "layouts/footer" %>
   </body>
 </html>
