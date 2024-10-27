@@ -354,6 +354,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
+  dotenv
   importmap-rails
   kamal
   pg (~> 1.1)

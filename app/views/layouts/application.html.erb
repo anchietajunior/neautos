@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <title><%= content_for(:title) || "Neautos" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -19,11 +19,13 @@
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="bg-slate-200" style="max-width: 1024px; margin: 0 auto">
+    <%= render("shared/navbar") %>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
